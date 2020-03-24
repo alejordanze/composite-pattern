@@ -16,10 +16,10 @@ public class Sale {
 		this.customerName = name;
 	}
 	
-	public long getCustomerId() {
+	public long getSaleId() {
 		return saleId;
 	}
-	public void setCustomerId(long customerId) {
+	public void setSaleId(long customerId) {
 		this.saleId = customerId;
 	}
 	public String getCustomerName() {
@@ -44,7 +44,7 @@ public class Sale {
 		productList.remove(p);
 	}
 	
-	public float getPrice() {
+	public float getSalePrice() {
 		float price = 0;
 		for(AbstractProduct p : productList) {
 			price += p.getPrice();
@@ -59,6 +59,6 @@ public class Sale {
 			System.out.println(p.getName() + " $ " + p.getPrice());
 		}
 		
-		System.out.println("TOTAL: $ " + this.getPrice() + "\n");
+		System.out.println("TOTAL: $ " + this.getSalePrice() + "\n");
 	}
 }
