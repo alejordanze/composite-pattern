@@ -3,14 +3,14 @@ package main;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompoundProduct extends AbstractProduct {
+public class CompositeProduct extends AbstractProduct {
 
 	List<AbstractProduct> productsList = new ArrayList<>(); 
 	
-	CompoundProduct(){	
+	CompositeProduct(){	
 	}
 	
-	CompoundProduct(String name){
+	CompositeProduct(String name){
 		super(name, 0);
 	}
 	
